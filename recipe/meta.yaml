@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/gavinsimpson/permute
-  license: GPL (2)
+  license: GPL 2
   summary: 'Restricted permutations with R'
   description: |
     A set of restricted permutation designs for freely exchangeable, line transects (time series), and spatial
