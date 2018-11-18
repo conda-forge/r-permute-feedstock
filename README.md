@@ -18,9 +18,8 @@ in which the whole-plots or split-plots or both can be freely-exchangeable or on
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-permute-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-permute-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-permute-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-permute-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-permute-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-permute-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-permute-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-permute-feedstock)
 
 Current release info
 ====================
