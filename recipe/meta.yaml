@@ -1,6 +1,6 @@
 {% set name = "r-permute" %}
-{% set version = "0.9-4" %}
-{% set sha256 = "a541a5f5636ddd67fd856d3e11224f15bc068e96e23aabe3e607a7e7c2fc1cf1" %}
+{% set version = "0.9-5" %}
+{% set sha256 = "d2885384a07497e8df273689d6713fc7c57a7c161f6935f3572015e16ab94865" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
 
 build:
   noarch: generic
-  number: 2002
+  number: 0
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/
