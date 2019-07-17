@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-permute
 ===============
 
@@ -22,8 +18,15 @@ in which the whole-plots or split-plots or both can be freely-exchangeable or on
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-permute-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-permute-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1434&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-permute-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -118,6 +121,7 @@ Feedstock Maintainers
 =====================
 
 * [@bgruening](https://github.com/bgruening/)
+* [@conda-forge/r](https://github.com/conda-forge/r/)
 * [@daf](https://github.com/daf/)
 * [@johanneskoester](https://github.com/johanneskoester/)
 * [@ocefpaf](https://github.com/ocefpaf/)
