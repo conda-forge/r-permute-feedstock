@@ -1,6 +1,5 @@
 {% set name = "r-permute" %}
 {% set version = "0.9-5" %}
-{% set sha256 = "d2885384a07497e8df273689d6713fc7c57a7c161f6935f3572015e16ab94865" %}
 
 package:
   name: {{ name|lower }}
@@ -8,9 +7,9 @@ package:
 
 source:
   url:
-    - https://cran.r-project.org/src/contrib/permute_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/permute/permute_{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+    - {{ cran_mirror }}/src/contrib/permute_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/permute/permute_{{ version }}.tar.gz
+  sha256: d2885384a07497e8df273689d6713fc7c57a7c161f6935f3572015e16ab94865
 
 build:
   noarch: generic
@@ -21,6 +20,8 @@ build:
     - lib/
 
 requirements:
+  build:
+    - {{posix}}zip               # [win]
   host:
     - r-base
   run:
@@ -41,6 +42,9 @@ about:
     in which the whole-plots or split-plots or both can be freely-exchangeable or one of the restricted designs. The
     'permute' package is modelled after the permutation schemes of 'Canoco 3.1' (and later) by Cajo ter Braak.
   doc_url: https://cran.r-project.org/web/packages/permute/permute.pdf
+  license_family: GPL2
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
