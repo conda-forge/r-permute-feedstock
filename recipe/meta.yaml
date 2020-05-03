@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: generic
-  number: 2
+  number: 3
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/
@@ -21,7 +21,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
   run:
