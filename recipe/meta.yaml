@@ -12,6 +12,7 @@ source:
   sha256: eff88ffb579aaeb994e9f8609b776b2d9d9d56bc2879ddf180e3a2ad19f48dc0
 
 build:
+  merge_build_host: True  # [win]
   noarch: generic
   number: 0
   script: R CMD INSTALL --build .
@@ -22,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
   run:
@@ -29,12 +31,12 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('permute')"   # [not win]
+    - $R -e "library('permute')"           # [not win]
     - "\"%R%\" -e \"library('permute')\""  # [win]
 
 about:
   home: https://github.com/gavinsimpson/permute
-  license: GPL 2
+  license: GPL-2.0-only
   summary: Restricted permutations with R
   description: |
     A set of restricted permutation designs for freely exchangeable, line transects (time series), and spatial
