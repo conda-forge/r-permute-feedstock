@@ -1,5 +1,5 @@
 {% set name = "r-permute" %}
-{% set version = "0.9-5" %}
+{% set version = "0.9-7" %}
 
 package:
   name: {{ name|lower }}
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/permute_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/permute/permute_{{ version }}.tar.gz
-  sha256: d2885384a07497e8df273689d6713fc7c57a7c161f6935f3572015e16ab94865
+  sha256: eff88ffb579aaeb994e9f8609b776b2d9d9d56bc2879ddf180e3a2ad19f48dc0
 
 build:
   noarch: generic
-  number: 3
+  number: 0
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/
@@ -35,7 +35,7 @@ test:
 about:
   home: https://github.com/gavinsimpson/permute
   license: GPL 2
-  summary: 'Restricted permutations with R'
+  summary: Restricted permutations with R
   description: |
     A set of restricted permutation designs for freely exchangeable, line transects (time series), and spatial
     grid designs plus permutation of blocks (groups of samples) is provided. 'permute' also allows split-plot designs,
@@ -44,7 +44,7 @@ about:
   doc_url: https://cran.r-project.org/web/packages/permute/permute.pdf
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
