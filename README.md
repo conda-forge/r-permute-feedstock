@@ -3,7 +3,7 @@ About r-permute
 
 Home: https://github.com/gavinsimpson/permute
 
-Package license: GPL 2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-permute-feedstock/blob/master/LICENSE.txt)
 
