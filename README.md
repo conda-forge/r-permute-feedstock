@@ -1,11 +1,11 @@
-About r-permute
-===============
+About r-permute-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-permute-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/gavinsimpson/permute
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-permute-feedstock/blob/main/LICENSE.txt)
 
 Summary: Restricted permutations with R
 
