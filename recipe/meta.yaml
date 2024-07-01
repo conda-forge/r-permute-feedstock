@@ -14,7 +14,7 @@ source:
 build:
   merge_build_host: True  # [win]
   noarch: generic
-  number: 2
+  number: 3
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/
