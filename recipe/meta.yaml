@@ -1,5 +1,5 @@
 {% set name = "r-permute" %}
-{% set version = "0.9-8" %}
+{% set version = "0.9-10" %}
 
 package:
   name: {{ name|lower }}
@@ -9,12 +9,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/permute_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/permute/permute_{{ version }}.tar.gz
-  sha256: f2c838526046925c6e7495784846139bb6f0ac6712abf0335096a473dc29e34b
+  sha256: dc182b20d2f0dcafbe0384640b949b9d70faee4cbd20bf88ab55de811b105104
 
 build:
   merge_build_host: true  # [win]
   noarch: generic
-  number: 1
+  number: 0
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/
